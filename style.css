@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(214, 214, 214);
+    margin: 0px;    
+}
+
+header > div#logo {
+   
+    margin: 10px 50px 10px 20px;
+    
+}
+
+header > div {
+    display: inline-block;
+}
+
+header  {
+    
+    background-color: white;
+    color: rgb(255, 255, 255);    
+    box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.158);
+}
+
+header > div#menu > nav {                 
+    font-weight: bold; 
+    vertical-align: middle;
+    }
+
+header > div > nav > a {    
+    
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 10px;
+    margin: 5px 30px;
+    
+}
+
+nav > a:hover {
+    color: white;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5px;
+}
+
+main > section {
+    display: inline-block;
+    text-align: justify;
+    width: 300px;
+    background-color: white;
+    padding: 10px 30px;
+    border: 3px solid black;
+    margin: 10px;
+    box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.158);
+    border-radius: 50px 0px;
+}
+
+footer {
+    background-color: black;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+footer > p {
+    margin: 20px;
+}
