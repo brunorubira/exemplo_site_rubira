@@ -1,17 +1,27 @@
+@charset "UTF-8"
+
+@font-face {
+    font-family: 'Oswald';
+    src: url(fonts/Oswald-VariableFont_wght.ttf);
+}
+
+:root {
+    --font01 : 'Oswald' , cursive;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(214, 214, 214);
+    font-family: var(--font01);
+    background-color: rgb(0, 0, 0);
+    background-image: url('imagens/fundo700.jpg');
     margin: 0px;    
-}
-
-header > div#logo {
-   
-    margin: 10px 50px 10px 20px;
-    
-}
-
-header > div {
-    display: inline-block;
+    background-repeat: no-repeat;
+    background-position: middle ;
+    background-size: cover;
 }
 
 header  {
@@ -19,35 +29,85 @@ header  {
     background-color: white;
     color: rgb(255, 255, 255);    
     box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.158);
+    padding-bottom: 10px;
+    box-shadow: 0px 0px 10px black;
 }
 
-header > div#menu > nav {                 
+header > div#logo {
+   padding: 10px 50vw;
+
+}
+
+nav {
     font-weight: bold; 
-    vertical-align: middle;
+    margin-left: 30vw;
     }
 
-header > div > nav > a {    
+nav > a {
     
     text-decoration: none;
     color: rgb(0, 0, 0);
     padding: 10px;
-    margin: 5px 30px;
+    margin: 15px;
     
+       
 }
 
 nav > a:hover {
     color: white;
     background-color: rgb(0, 0, 0);
     border-radius: 5px;
+    transition: 0.3s;
 }
 
-main > section {
+div#produtos {
+    margin: 0 auto;
+}
+
+main section {
+    
+}
+
+main section:nth-child(1) {
     display: inline-block;
     text-align: justify;
-    width: 300px;
+    width: 100px;
     background-color: white;
     padding: 10px 30px;
-    border: 3px solid black;
+    border: 30px solid rgb(248, 0, 0);
+    margin: 10px;
+    box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.158);
+    border-radius: 50px 0px;
+}
+main section:nth-child(2) {
+    display: inline-block;
+    text-align: justify;
+    width: 100px;
+    background-color: white;
+    padding: 10px 30px;
+    border: 30px solid rgb(255, 217, 0);
+    margin: 10px;
+    box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.158);
+    border-radius: 50px 0px;
+}
+main section:nth-child(3) {
+    display: inline-block;
+    text-align: justify;
+    width: 100px;
+    background-color: white;
+    padding: 10px 30px;
+    border: 30px solid rgb(255, 136, 0);
+    margin: 10px;
+    box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.158);
+    border-radius: 50px 0px;
+}
+main section:nth-child(4) {
+    display: inline-block;
+    text-align: justify;
+    width: 100px;
+    background-color: white;
+    padding: 10px 30px;
+    border: 30px solid rgb(0, 0, 0);
     margin: 10px;
     box-shadow: 3px 3px 3px 5px rgba(0, 0, 0, 0.158);
     border-radius: 50px 0px;
