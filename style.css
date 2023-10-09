@@ -188,6 +188,32 @@ ul {
   height: 80px;
 }
 
+.dotgrid .wrapper {
+  /* display: grid; */
+  display: grid;
+  --grid-col: 175px;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  /* grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(var (--grid-col), 100%), 1fr)
+  ); */
+  gap: var(--gutter, 30px);
+}
+
+.dotgrid .dot-image {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.dotgrid .dot-image > a {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+}
+
 @media (min-width: 992px) {
   .menu-trigger {
     display: none;
@@ -198,7 +224,16 @@ ul {
   .header-left .list-inline {
     display: block;
   }
-  nav .sub-menu {
+
+  nav.menu .sub-mega {
+    left: 0;
+    right: 0;
+    padding: 50px 0;
+
+    display: block;
+  }
+
+  nav.menu :where(.sub-mega, .sub-menu) {
     position: absolute;
     top: auto;
     line-height: initial;
@@ -209,7 +244,7 @@ ul {
     animation: var(--fade);
   }
 
-  nav.menu li:hover .sub-menu {
+  nav.menu li:hover :where(.sub-mega, .sub-menu) {
     display: block;
   }
 
